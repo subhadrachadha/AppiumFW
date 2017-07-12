@@ -1,0 +1,21 @@
+<suite name="GET MY PARKING">
+	
+	
+	<test name="SignUP Test" allow-return-values="true">
+		<classes>
+			<class name="com.gmp.SignUpTest" />
+		</classes>
+	</test>
+	<test name="SignIn Test" allow-return-values="true">
+		<classes>
+			<class name="com.gmp.SignInTest" />
+		</classes>
+	</test>
+		<test name="Search Test" allow-return-values="true">
+			<classes>
+				<class name="com.gmp.SearchTest" />
+			</classes>
+	</test>
+	
+</suite>
+

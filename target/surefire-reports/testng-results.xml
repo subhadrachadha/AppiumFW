@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="2089" started-at="2017-07-12T05:34:47Z" finished-at="2017-07-12T05:34:49Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2089" started-at="2017-07-12T05:34:47Z" finished-at="2017-07-12T05:34:49Z">
+      <class name="com.gmp.SignUpTest">
+        <test-method status="FAIL" signature="signUpTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gmp.SignUpTest@3ee6b69]" name="signUpTest" duration-ms="0" started-at="2017-07-12T11:04:49Z" data-provider="getData" finished-at="2017-07-12T11:04:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/gson/JsonParseException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/gson/JsonParseException
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.<init>(JsonHttpCommandCodec.java:63)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:39)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:52)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:169)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:82)
+	at com.gmt.base.BaseTest.launchApp(BaseTest.java:36)
+	at com.gmp.SignUpTest.signUpTest(SignUpTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonParseException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.gmp.SignUpTest@3ee6b69]" name="quit" is-config="true" duration-ms="0" started-at="2017-07-12T11:04:49Z" finished-at="2017-07-12T11:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.gmp.SignUpTest -->
+      <class name="com.gmp.SearchTest">
+        <test-method status="FAIL" signature="searchTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gmp.SearchTest@33802282]" name="searchTest" duration-ms="294" started-at="2017-07-12T11:04:48Z" data-provider="getData" finished-at="2017-07-12T11:04:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/gson/JsonParseException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/gson/JsonParseException
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.<init>(JsonHttpCommandCodec.java:63)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:39)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:52)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:169)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:82)
+	at com.gmt.base.BaseTest.launchApp(BaseTest.java:36)
+	at com.gmp.SearchTest.searchTest(SearchTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonParseException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.gmp.SearchTest@33802282]" name="quit" is-config="true" duration-ms="1" started-at="2017-07-12T11:04:48Z" finished-at="2017-07-12T11:04:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.gmp.SearchTest -->
+      <class name="com.gmp.SignInTest">
+        <test-method status="FAIL" signature="signInTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gmp.SignInTest@4035acf6]" name="signInTest" duration-ms="1" started-at="2017-07-12T11:04:49Z" data-provider="getData" finished-at="2017-07-12T11:04:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/gson/JsonParseException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/gson/JsonParseException
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.<init>(JsonHttpCommandCodec.java:63)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:39)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:52)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:169)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:82)
+	at com.gmt.base.BaseTest.launchApp(BaseTest.java:36)
+	at com.gmp.SignInTest.signInTest(SignInTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonParseException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.gmp.SignInTest@4035acf6]" name="quit" is-config="true" duration-ms="0" started-at="2017-07-12T11:04:49Z" finished-at="2017-07-12T11:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.gmp.SignInTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GET MY PARKING]">
+  <test name="SignUP Test(failed)">
+    <classes>
+      <class name="com.gmp.SignInTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.gmp.SignInTest -->
+      <class name="com.gmp.SearchTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.gmp.SearchTest -->
+      <class name="com.gmp.SignUpTest">
+        <methods>
+          <include name="quit"/>
+          <include name="signUpTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.gmp.SignUpTest -->
+    </classes>
+  </test> <!-- SignUP Test(failed) -->
+  <test name="SignIn Test(failed)">
+    <classes>
+      <class name="com.gmp.SignInTest">
+        <methods>
+          <include name="quit"/>
+          <include name="signInTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.gmp.SignInTest -->
+      <class name="com.gmp.SearchTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.gmp.SearchTest -->
+      <class name="com.gmp.SignUpTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.gmp.SignUpTest -->
+    </classes>
+  </test> <!-- SignIn Test(failed) -->
+  <test name="Search Test(failed)">
+    <classes>
+      <class name="com.gmp.SignInTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.gmp.SignInTest -->
+      <class name="com.gmp.SearchTest">
+        <methods>
+          <include name="quit"/>
+          <include name="searchTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.gmp.SearchTest -->
+      <class name="com.gmp.SignUpTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.gmp.SignUpTest -->
+    </classes>
+  </test> <!-- Search Test(failed) -->
+</suite> <!-- Failed suite [GET MY PARKING] -->
