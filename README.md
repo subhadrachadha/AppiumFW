@@ -14,6 +14,6 @@ Setup Appium as described-http://appium.io/getting-started.html
 mvn clean install 
 
 # Start Appium server
-Appium &
+appium &
 
 # Run testNg.xml under src/test/resources
